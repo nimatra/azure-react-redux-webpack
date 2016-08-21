@@ -1,0 +1,10 @@
+{
+  "generator-react-redux-app": {
+    "appName": "Social Memory Web",
+    "port": 3000,
+    "installServer": true,
+    "apiServerPort": 3008,
+    "install": true,
+    "appNameSlug": "social-memory-web"
+  }
+}

@@ -1,0 +1,115 @@
+.page-menu {
+  position:   absolute;
+  top:        0;
+  left:       0;
+  z-index:    100;
+  width:      300px;
+  height:     100%;
+  background: #373a47;
+  transition: all .3s;
+
+  opacity:    1;
+  transition: transform .3s;
+  transform:  translate3d(-100%, 0, 0);
+}
+
+.page-menu_active_yes {
+  visibility: visible;
+  transform:  translate3d(0, 0, 0);
+}
+
+.page-menu__shift {
+  float:        right;
+  margin-right: 5px;
+  font-size:    30px;
+  color:        #f3efe0;
+  cursor:       pointer;
+}
+
+.page-menu__label {
+  margin:      0;
+  padding:     1em;
+  color:       #f3efe0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+  font-weight: 300;
+  font-size:   2em;
+  line-height: 60px;
+}
+
+.page-menu__label::before {
+  content:      '';
+  display:      inline-block;
+  float:        left;
+  width:        50px;
+  height:       60px;
+  margin-right: 20px;
+  background:   url("../images/logo.svg") center center no-repeat;
+}
+
+.page-menu__list {
+  margin:     0;
+  padding:    0;
+  list-style: none;
+}
+
+.page-menu__link {
+  display:         block;
+  padding:         .8em 1em .8em 1.2em;
+  outline:         none;
+  color:           #f3efe0;
+  text-transform:  uppercase;
+  text-decoration: none;
+  text-shadow:     0 0 1px rgba(255, 255, 255, .1);
+  letter-spacing:  1px;
+  line-height:     1;
+  font-weight:     400;
+  transition:      background .3s;
+  cursor:          pointer;
+}
+
+.page-menu__icon {
+  font-size:      1em;
+  vertical-align: bottom;
+  margin-right:   1em;
+}
+
+.page-menu__item {
+  transform:                  translate3d(0, 500px, 0);
+  transition:                 transform 0s .4s;
+  transition-timing-function: cubic-bezier(.7, 0, .3, 1);
+}
+
+.page-menu__item:nth-child(2) {
+  transform: translate3d(0, 1000px, 0);
+}
+
+.page-menu__item:nth-child(3) {
+  transform: translate3d(0, 1500px, 0);
+}
+
+.page-menu__item:nth-child(4) {
+  transform: translate3d(0, 2000px, 0);
+}
+
+.page-menu__item:nth-child(5) {
+  transform: translate3d(0, 2500px, 0);
+}
+
+.page-menu_active_yes .page-menu__item {
+  transform:                  translate3d(0, 0, 0);
+  transition:                 transform .6s;
+  transition-timing-function: cubic-bezier(.7, 0, .3, 1);
+}
+
+.page-menu__list .page-menu__list .page-menu__link {
+  border-top:   none;
+  padding-left: 3em;
+}
+
+.page-menu__pull-down {
+  position:  absolute;
+  bottom:    1em;
+  color:     #7E7E80;
+  font-size: .8em;
+  padding:   10px;
+}
