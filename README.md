@@ -1,4 +1,4 @@
-# azure-react-redux-webpack
+# Azure React Redux Webpack, Boilerplate   
 
 > A simple React-Redux project with Webpack and Gulp that runs on Azure Websites
 
